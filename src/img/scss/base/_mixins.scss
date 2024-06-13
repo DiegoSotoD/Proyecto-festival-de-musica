@@ -1,0 +1,25 @@
+@use 'variables' as v;
+
+@mixin vista_telefono{
+    @media(min-width: v.$vista_telefono){
+        @content;
+    }
+}
+
+@mixin vista_tablet{
+    @media(min-width: v.$vista_tablet){
+        @content;
+    }
+}
+
+@mixin vista_desktop{
+    @media(min-width: v.$vista_desktop){
+        @content;
+    }
+}
+
+@mixin vista_desktopXL{
+    @media(min-width: v.$vista_desktopXL){ 
+        @content;
+    }
+}
